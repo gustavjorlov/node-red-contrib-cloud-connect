@@ -1,0 +1,41 @@
+<script type="text/javascript">
+
+RED.nodes.registerType('cloud-connect-event-in', {
+  category: 'input',
+  color: '#00a6d6',
+  defaults: {
+    account: { value:"", type:"cloud-connect-account" },
+    topic:  { value: "" },
+    name: { value: "" }
+  },
+  inputs:  0,
+  outputs: 1,
+  icon: "telenor.png",
+  label: function() {
+    return this.name || this.topic || "Cloud Connect Event In";
+  },
+  paletteLabel: function() {
+    return "CC Event";
+  }
+});
+
+</script>
+
+<script type="text/x-red" data-template-name="cloud-connect-event-in">
+  <div class="form-row">
+    <label for="node-input-account"><i class="icon-tag"></i> Account</label>
+    <input type="text" id="node-input-account">
+  </div>
+  <div class="form-row">
+    <label for="node-input-topic"><i class="icon-tag"></i> Topic</label>
+    <input type="text" id="node-input-topic">
+  </div>
+  <div class="form-row">
+    <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+    <input type="text" id="node-input-name">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="cloud-connect-event-in">
+  <p>Cloud Connect Event In Node</p>
+</script>

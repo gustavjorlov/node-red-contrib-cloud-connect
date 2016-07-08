@@ -1,0 +1,28 @@
+<script type="text/javascript">
+RED.nodes.registerType('cloud-connect-account',{
+  category: 'config',
+  defaults: {
+    url: { value:"", required:true },
+    username: { value: "", required: true },
+    password: { value: "", required: true }
+  },
+  label: function() {
+    return this.url || "Cloud Connect Account"
+  }
+});
+</script>
+
+<script type="text/x-red" data-template-name="cloud-connect-account">
+  <div class="form-row">
+    <label for="node-config-input-url"><i class="icon-bookmark"></i> Url</label>
+    <input type="text" id="node-config-input-url">
+  </div>
+  <div class="form-row">
+    <label for="node-config-input-username"><i class="icon-bookmark"></i> Username</label>
+    <input type="text" id="node-config-input-username">
+  </div>
+  <div class="form-row">
+    <label for="node-config-input-password"><i class="icon-bookmark"></i> Password</label>
+    <input type="password" id="node-config-input-password">
+  </div>
+</script>

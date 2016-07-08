@@ -1,0 +1,23 @@
+{
+  "name": "node-red-contrib-cloud-connect",
+  "version": "1.0.0",
+  "description": "API end event in/out nodes for Telenor Cloud Connect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anders Wittfeldt <anders.wittfeldt@telenorconnexion.com>",
+  "license": "ISC",
+  "dependencies": {
+    "aws-iot-device-sdk": "^1.0.12",
+    "aws-sdk": "^2.4.6"
+  },
+  "node-red": {
+    "nodes": {
+      "cloud-connect-account": "lib/account.js",
+      "cloud-connect-api": "lib/api.js",
+      "cloud-connect-event-out": "lib/event-out.js",
+      "cloud-connect-event-in": "lib/event-in.js"
+    }
+  }
+}
