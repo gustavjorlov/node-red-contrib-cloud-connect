@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "aws-iot-device-sdk": "^1.0.12",
-    "aws-sdk": "^2.4.6"
+    "aws-sdk": "^2.4.6",
+    "request": "^2.74.0"
   },
   "node-red": {
     "nodes": {
