@@ -25,11 +25,10 @@ or globally alongside Node-RED:
 `sudo npm install -g <npm-package-name>`
 You will need to restart Node-RED for it to pick-up the new nodes.
 
-## Cloud Connect API
 
+### Usage Example
 The `CC API` function node can be used to connect to a Cloud Connect API. It supports input and output for the APIs.
 
-### Example
 1. Connect nodes
   - Drag the `CC API` node onto the node-red flow canvas.
   - Connect an `inject` input node to the left of the `CC API` node
@@ -46,6 +45,9 @@ The `CC API` function node can be used to connect to a Cloud Connect API. It sup
   - Open the debug pane to the right
   - Click the button to the left of the `inject` node and watch your result appear in the debug pane.
 
+### Example payloads for the various endpoints
+Further details on parameters and responses are available in our Cloud API documentation
+
 #### Things
 ```
 {
@@ -59,8 +61,11 @@ The `CC API` function node can be used to connect to a Cloud Connect API. It sup
 }
 ```
 #### Thing batch
+TBD
 #### Thing types
+TBD
 #### Domains
+TBD
 #### Observations
 ```
 {
@@ -111,6 +116,7 @@ Example payload:
 }
 ```
 #### Rules
+TBD
 #### Files
 ```
 {
