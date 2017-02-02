@@ -106,7 +106,8 @@ Example payload:
     "roleName": "ReadWrite",
     "domainName": "root"
   }
-}```
+}
+```
 #### Rules
 #### Files
 ```
