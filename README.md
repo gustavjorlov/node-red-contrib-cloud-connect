@@ -47,6 +47,7 @@ The `CC API` function node can be used to connect to a Cloud Connect API. It sup
   - Click the button to the left of the `inject` node and watch your result appear in the debug pane.
 
 #### Things
+```
 {
   "action": "FIND",
   "query": {
@@ -56,6 +57,7 @@ The `CC API` function node can be used to connect to a Cloud Connect API. It sup
     }
   }
 }
+```
 #### Thing batch
 #### Thing types
 #### Domains
