@@ -7,7 +7,8 @@ Either install node-red globally or locally using `npm install node-red`, `-g` f
 
 By default, Node-RED stores your data in the directory `$HOME/.node-red`. To override what directory to use, the `--userDir` / `-u` command-line option can be used:
 ```
-node-red -u ./my-local-storage-directory```
+node-red -u ./my-local-storage-directory
+```
 
 The node-red interface can now be found at `http://127.0.0.1:1880/`.
 
@@ -17,7 +18,8 @@ To install an npm-packaged node, you can either install it locally within your u
 
 ```
 cd $HOME/.node-red
-npm install <npm-package-name>```
+npm install <npm-package-name>
+```
 or globally alongside Node-RED:
 
 `sudo npm install -g <npm-package-name>`
