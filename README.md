@@ -3,7 +3,7 @@ API and event in+out nodes for Telenor Cloud Connect
 
 ## Install and run node-red
 
-Either install node-red globally or locally using `npm install node-red`, `-g` flag for global installation. Start a node-red server via invoking `node-red` from a terminal or from npm scripts.
+Either install node-red globally or locally using `npm install node-red`, `-g` flag for global installation. Start a node-red server by invoking `node-red` from a terminal or from npm scripts.
 
 By default, Node-RED stores your data in the directory `$HOME/.node-red`. To override what directory to use, the `--userDir` / `-u` command-line option can be used:
 ```
@@ -25,6 +25,10 @@ or globally alongside Node-RED:
 `sudo npm install -g <npm-package-name>`
 You will need to restart Node-RED for it to pick-up the new nodes.
 
+### Adding nodes from local files
+
+To add nodes to your node red server from downloaded files in the `node-red-contrib-cloud-connect`, locate the `lib/` folder and copy its contents (matching `js` and `html` files) to a `nodes/` folder which should be added inside your previously specified `--userDir` folder.
+
 
 ### Usage Example
 The `CC API` function node can be used to connect to a Cloud Connect API. It supports input and output for the APIs.
@@ -41,7 +45,7 @@ The `CC API` function node can be used to connect to a Cloud Connect API. It sup
   - Make sure to pick the `JSON` payload type
 4. Test it!
   - Click Deploy in the upper right corner
-  - Wait for the connection indicator to turn green
+  - Wait for the `CC API` connection indicator to turn green
   - Open the debug pane to the right
   - Click the button to the left of the `inject` node and watch your result appear in the debug pane.
 
